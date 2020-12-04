@@ -1,6 +1,6 @@
-<h1 align-text="center">Cofee-Shop-Responsive</h1>
+<h1 align="center">Cofee Shop Responsive</h1>
 
-## Requirements:
+## Requirements :
 
 <ul>
 <li>Html5 Semantic</li>
@@ -13,6 +13,6 @@
 <li>Deploy di https://www.netlify.com/</li>
 </ul>
 
-## Link Web:
+## Link Web :
 
 https://coffee-shop-hasbi.netlify.app
