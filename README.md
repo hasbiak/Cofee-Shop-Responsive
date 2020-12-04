@@ -13,6 +13,6 @@
 <li>Deploy di https://www.netlify.com/</li>
 </ul>
 
-# Link :
+## Link Web:
 
-<a href="https://coffee-shop-hasbi.netlify.app/">
+https://coffee-shop-hasbi.netlify.app
