@@ -51,7 +51,8 @@ header .menu-header {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-header .menu-header .home a {
+header div.menu-header .home a {
+  font-weight: bold;
   color: #6a4029;
 }
 header .menu-header a:link,
