@@ -3,202 +3,184 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop</title>
+    <title>Kang Kopi</title>
     <link
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <div class="flex-container">
-      <!-- Start header -->
-      <header>
-        <div class="header-logo"> 
-          <img src="assets/img/coffe.png">
-           Coffee Shop
+    <header>
+      <div class="header-logo d-none d-md-block"> 
+        <img src="./assets/img/coffe.png" alt="">
+          Coffee Shop
+      </div>
+      <div class="header-logo d-md-none"> 
+        <img src="./assets/img/coffe.png" alt="">
+      </div>
+      <div class="menu-header">
+        <div class="home"><a href="#">Home</a></div>
+        <div class="product"><a href="index.html">Product</a></div>
+        <div class="cart"><a href="payment.html">Your Cart</a></div>
+        <div class="history"><a href="history.html">History</a></div>
+      </div>
+      <div class="d-none d-sm-block">
+        <div class="notif-header">
+          <div><a href="#"><img src="./assets/img/search.png" alt=""></a></div>
+          <div><a href="#"><img src="./assets/img/chat.png" alt=""></a></div>
+          <div><a href="profile.html" ><img src="./assets/img/profile.png" alt="" style="border-radius: 50%;"></a></div>
         </div>
-
-        <div class="menu-header">
-          <div class="home"><a href="#">Home</a></div>
-          <div class="product"><a href="#">Product</a></div>
-          <div class="cart"><a href="#">Your Cart</a></div>
-          <div class="history"><a href="#">History</a></div>
-        </div>
-          <div class="nav-header">
-            <div><a href="#"><img src="assets/img/search.png"></a></div>
-            <div><a href="#"><img src="assets/img/chat.png"></a></div>
-            <div><a href="#"><img src="assets/img/profile.png"></a></div>
-          </div>
-      </header>
-      <!-- End header -->
-      <!-- Start Main -->
-      <main>
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col-4 main-promo">
-              <div class="promo-text">Promo For You</div>
-              <div class="promo-desc">
-                <li>Coupons will be updated every weeks.</li> 
-                <li>Check them out! </li> 
-              </div>
-              <div class="promo-content">
-                <div class="flex-container">
-                  <div class="box3"></div>
-                  <div class="box2"></div>
-                  <div class="box1">
-                    <div class="add-content">
-                      <div class="image-content"><img src="assets/img/beefspaghetti.png"></div>
-                      <div class="desc-content">
-                        <div class="name-product">
-                          Beef Spaghetti
-                        </div>
-                        <div class="disc-product">
-                          20% OFF
-                        </div>
+      </div>
+    </header>
+    <!-- Start main -->
+    <main>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-4 main-promo">
+            <div class="promo-text">Promo For You</div>
+            <div class="promo-desc">
+              <li>Coupons will be updated every weeks.</li> 
+              <li>Check them out! </li> 
+            </div>
+            <div class="promo-content">
+              <div class="flex-container">
+                <div class="box3" ></div>
+                <div class="box2"></div>
+                <div class="box1">
+                  <div class="add-content">
+                    <div class="image-content"><img src="./assets/img/beefspaghetti.png" alt=""></div>
+                    <div class="desc-content">
+                      <div class="name-product">
+                        Beef Spaghetti
                       </div>
-                      <div class="disc-content">
-                        Buy 1 Choco Oreo and get 20% off for Beef Spaghetti
+                      <div class="disc-product">
+                        20% OFF
                       </div>
                     </div>
-                    <div class="bottom">
-                      <div class="image-content">
-                        Coupon Code
-                      </div>
-                      <div class="desc-content">
-                        FNPR15RG
-                      </div>
-                      <div class="disc-content">
-                        Valid untill October 10th 2020
-                      </div>
+                    <div class="disc-content">
+                      Buy 1 Choco Oreo and get 20% off for Beef Spaghetti
+                    </div>
+                  </div>
+                  <div class="bottom">
+                    <div class="image-content">
+                      Coupon Code
+                    </div>
+                    <div class="desc-content">
+                      FNPR15RG
+                    </div>
+                    <div class="disc-content">
+                      Valid untill October 10th 2020
                     </div>
                   </div>
                 </div>
               </div>
-              <div>
-                <button type="button" class="add-coupon">Apply Coupon</button>
-              </div>
-              <div class="desc-coupon">
-                Terms and Condition
-                <li> 1. You can only apply 1 coupon per day</li>
-                <li>2. It only for dine in</li>
-                <li>3. Buy 1 get 1 only for new user</li>
-                <li>4. Should make member card to apply coupon</li>
-              </div>
             </div>
-            <div class="col-8 main-product">
-              <div class="add-content">
-                <div class="favorit"><a href="#">Favorite & Promo</a></div>
-                <div class="coffee"><a href="#">Coffee</a></div>
-                <div class="non-coffe"><a href="#">Non Coffee</a></div>
-                <div class="foods"><a href="#">Foods</a></div>
-                <div class="add-on"><a href="#">Add-on</a></div>
-              </div>
-              <div class="card-grid">
-                <div class="flex-container">
-                  <div class="item1">
-                    <img src="assets/img/Veggie tomato mix.png">
-                      <p class="name">Veggie tomato mix</p>
-                      <p class="price">IDR 34.000</p>
-                    
-                    
-                  </div>
-                  <div class="item2">
-                    <img src="assets/img/hazelnutlatte.png">
-                      <p class="name">Hazelnut Latte</p>
-                      <p class="price">IDR 25.000</p>
-                    
-                  </div>
-                  <div class="item3">
-                    <img src="assets/img/summerfriedrice.png">
-                      <p class="name">Summer fried rice</p>
-                      <p class="price">IDR 32.000</p>
-                    
-                    
-                  </div>
-                  <div class="item4">
-                    <img src="assets/img/creamyicelatte.png">
-                      <p class="name">Creamy Ice Latte</p>
-                      <p class="price">IDR 27.000</p>
-                   
-                  </div>
-                  <div class="item5">
-                    <img src="assets/img/drumstick.png">
-                      <p class="name">Drum Sticks</p>
-                      <p class="price">IDR 30.000</p>
-                    
-                  </div>
-                  <div class="item6">
-                    <img src="assets/img/saltyrice.png">
-                      <p class="name">Salty Rice</p>
-                      <p class="price">IDR 20.000</p>
-                   
-                  </div>
-                  <div class="item7">
-                    <img src="assets/img/summerfriedrice.png">
-                      <p class="name">Summer fried rice</p>
-                      <p class="price">IDR 32.000</p>
-                   
-                  </div>
-                  <div class="item8">
-                    <img src="assets/img/creamyicelatte.png">
-                      <p class="name">Creamy Ice Latte</p>
-                      <p class="price">IDR 27.000</p>
-                   
-                  </div>
-                  <div class="item9">
-                    <img src="assets/img/Veggie tomato mix.png">
-                      <p class="name">Veggie tomato mix</p>
-                      <p class="price">IDR 27.000</p>
-                    
-                  </div>
-                  <div class="item10">
-                    <img src="assets/img/Veggie tomato mix.png">
-                      <p class="name">Veggie tomato mix</p>
-                      <p class="price">IDR 27.000</p>
-                    
-                  </div>
-                  <div class="item11">
-                    <img src="assets/img/hazelnutlatte.png">
-                      <p class="name">Hazzelnut Latte</p>
-                      <p class="price">IDR 25.000</p>
-                    
-                  </div>
-                  <div class="item12">
-                    <img src="assets/img/creamyicelatte.png">
-                      <p class="name">Creamy Ice Latte</p>
-                      <p class="price">IDR 27.000</p>
-                    
-                  </div>
+            <div>
+              <button type="button" class="add-coupon">Apply Coupon</button>
+            </div>
+            <div class="desc-coupon">
+              Terms and Condition
+              <li> 1. You can only apply 1 coupon per day</li>
+              <li>2. It only for dine in</li>
+              <li>3. Buy 1 get 1 only for new user</li>
+              <li>4. Should make member card to apply coupon</li>
+            </div>
+          </div>
+          <div class="col-8 main-product">
+            <div class="add-content">
+              <div class="favorit"><a href="#">Favorite & Promo</a></div>
+              <div class="coffee"><a href="#">Coffee</a></div>
+              <div class="non-coffe"><a href="#">Non Coffee</a></div>
+              <div class="foods"><a href="#">Foods</a></div>
+              <div class="add-on"><a href="#">Add-on</a></div>
+            </div>
+            <div class="card-grid">
+              <div class="flex-container">
+                <a href="product-details.html">
+                <div class="item1">
+                  <img src="assets/img/Veggie tomato mix.png">
+                    <p class="name">Veggie tomato mix</p>
+                    <p class="price">IDR 34.000</p>
+                </div>
+                </a>
+                <div class="item2">
+                  <img src="assets/img/hazelnutlatte.png">
+                    <p class="name">Hazelnut Latte</p>
+                    <p class="price">IDR 25.000</p>
+                </div>
+                <div class="item3">
+                  <img src="assets/img/summerfriedrice.png">
+                    <p class="name">Summer fried rice</p>
+                    <p class="price">IDR 32.000</p>
+                </div>
+                <div class="item4">
+                  <img src="assets/img/creamyicelatte.png">
+                    <p class="name">Creamy Ice Latte</p>
+                    <p class="price">IDR 27.000</p>     
+                </div>
+                <div class="item5">
+                  <img src="assets/img/drumstick.png">
+                    <p class="name">Drum Sticks</p>
+                    <p class="price">IDR 30.000</p>  
+                </div>
+                <div class="item6">
+                  <img src="assets/img/saltyrice.png">
+                    <p class="name">Salty Rice</p>
+                    <p class="price">IDR 20.000</p>
+                </div>
+                <div class="item7">
+                  <img src="assets/img/summerfriedrice.png">
+                    <p class="name">Summer fried rice</p>
+                    <p class="price">IDR 32.000</p>
+                </div>
+                <div class="item8">
+                  <img src="assets/img/creamyicelatte.png">
+                    <p class="name">Creamy Ice Latte</p>
+                    <p class="price">IDR 27.000</p>
+                </div>
+                <div class="item9">
+                  <img src="assets/img/Veggie tomato mix.png">
+                    <p class="name">Veggie tomato mix</p>
+                    <p class="price">IDR 27.000</p>
+                </div>
+                <div class="item10">
+                  <img src="assets/img/Veggie tomato mix.png">
+                    <p class="name">Veggie tomato mix</p>
+                    <p class="price">IDR 27.000</p>
+                </div>
+                <div class="item11">
+                  <img src="assets/img/hazelnutlatte.png">
+                    <p class="name">Hazzelnut Latte</p>
+                    <p class="price">IDR 25.000</p>
+                </div>
+                <div class="item12">
+                  <img src="assets/img/creamyicelatte.png">
+                    <p class="name">Creamy Ice Latte</p>
+                    <p class="price">IDR 27.000</p>   
                 </div>
               </div>
-      
             </div>
           </div>
         </div>
-      </main>
-      <!-- End Main -->
-      <!-- Footer -->
-      <footer>
-        <div class="footer-profile">
-          <div class="profile-logo"><img src="assets/img/coffe.png" alt="">
-            Coffee Shop
-          </div>
-          <div class="profile-desc">
-            Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
-          </div>
-          <div class="profile-social">
-            <div><a href="#" ><img src="assets/img/facebook.png"></a></div>
-            <div><a href="#" ><img src="assets/img/twitter.png"></a></div>
-            <div><a href="#" ><img src="assets/img/instagram.png"></a></div>
-          </div>
-          <div class="copyright">&copy;2020CoffeeStore</div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer-profile">
+        <div class="profile-logo"><img src="./assets/img/coffe.png" alt="">
+          Coffee Shop
+        </div>
+        <div class="profile-desc">
+          Coffee Shop is a store that sells some good meals, and especially coffee. We provide high quality beans
+        </div>
+        <div class="profile-social">
+          <div><a href="#" ><img src="./assets/img/facebook.png" alt=""></a></div>
+          <div><a href="#" ><img src="./assets/img/twitter.png" alt=""></a></div>
+          <div><a href="#" ><img src="./assets/img/instagram.png" alt=""></a></div>
+        </div>
+        <div class="copyright">&copy;2020CoffeeStore</div>
         </div>
         <div class="footer-product">Product
           <div><a href="#">Download</a></div>
@@ -214,14 +196,6 @@
           <div><a href="#">Privacy Policy</a></div>
           <div><a href="#">Term of Service</a></div>
         </div>
-      </footer>
-      <!-- End Footer -->
-    </div>
-
-    <!-- Start Javascript online bootstrap -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-  <!-- End Javascript -->
+    </footer>
   </body>
 </html>

@@ -1,44 +1,19 @@
-.flex-container {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-.flex-container header {
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+/*------- Start Header and Footer ------*/
+header {
   font-family: "Rubik", sans-serif;
   background-color: white;
+  border-bottom: #f8f8f8 solid 5px;
   padding: 30px;
   display: flex;
   justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 1;
 }
-.flex-container .item1 img,
-.flex-container .item2 img,
-.flex-container .item3 img,
-.flex-container .item4 img,
-.flex-container .item5 img,
-.flex-container .item6 img,
-.flex-container .item7 img,
-.flex-container .item8 img,
-.flex-container .item9 img,
-.flex-container .item10 img,
-.flex-container .item11 img,
-.flex-container .item12 img {
-  border-radius: 50%;
-}
-.flex-container .item1 p.price,
-.flex-container .item2 p.price,
-.flex-container .item3 p.price,
-.flex-container .item4 p.price,
-.flex-container .item5 p.price,
-.flex-container .item6 p.price,
-.flex-container .item7 p.price,
-.flex-container .item8 p.price,
-.flex-container .item9 p.price,
-.flex-container .item10 p.price,
-.flex-container .item11 p.price,
-.flex-container .item12 p.price {
-  color: #6a4029;
-}
-header .header-logo {
-  font-family: "Rubik", sans-serif;
+header .header-logo.d-none.d-md-block {
   font-weight: bold;
   font-size: 20px;
   margin-left: 15px;
@@ -51,9 +26,26 @@ header .menu-header {
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
-header div.menu-header .home a {
+header div.menu-header .product a {
   font-weight: bold;
   color: #6a4029;
+}
+.main-product div.add-content .favorit a {
+  font-weight: bold;
+  color: #6a4029;
+  border-bottom: #6a4029;
+}
+header .menu-header a:link,
+header .menu-header a:visited {
+  color: #4f5665;
+
+  text-decoration: none;
+}
+header .menu-header a:hover {
+  color: #6a4029;
+}
+.menu-header div {
+  margin-left: 5px;
 }
 header .menu-header a:link,
 header .menu-header a:visited {
@@ -73,16 +65,13 @@ header .menu-header a:hover {
 .history:hover {
   font-weight: bold;
 }
-header .nav-header {
+header .notif-header {
   width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
-header .nav-header img {
-  border-radius: 50%;
-}
-.flex-container footer {
+footer {
   display: flex;
   align-items: flex-start;
   padding: 60px;
@@ -102,8 +91,7 @@ footer .footer-profile {
   margin-bottom: 10px;
 }
 .footer-profile .profile-desc {
-  font-family: "Rubik", sans-serif;
-  width: 39%;
+  width: 200px;
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
@@ -117,6 +105,9 @@ footer .footer-profile {
 }
 .profile-social a {
   margin-right: 15px;
+}
+.profile-social a img {
+  border-radius: 50%;
 }
 .footer-profile .copyright {
   color: #afb5c0;
@@ -149,10 +140,40 @@ footer .footer-product {
 .footer-product div a {
   color: #4f5665;
 }
+/* =========================batas style header dan footer================================================== */
 main {
-  border-top: #f8f8f8 solid 5px;
   height: 1000px;
+  margin-top: 100px;
 }
+.flex-container .item1 img,
+.flex-container .item2 img,
+.flex-container .item3 img,
+.flex-container .item4 img,
+.flex-container .item5 img,
+.flex-container .item6 img,
+.flex-container .item7 img,
+.flex-container .item8 img,
+.flex-container .item9 img,
+.flex-container .item10 img,
+.flex-container .item11 img,
+.flex-container .item12 img {
+  border-radius: 50%;
+}
+.flex-container .item1 p.price,
+.flex-container .item2 p.price,
+.flex-container .item3 p.price,
+.flex-container .item4 p.price,
+.flex-container .item5 p.price,
+.flex-container .item6 p.price,
+.flex-container .item7 p.price,
+.flex-container .item8 p.price,
+.flex-container .item9 p.price,
+.flex-container .item10 p.price,
+.flex-container .item11 p.price,
+.flex-container .item12 p.price {
+  color: #6a4029;
+}
+/* =============================== main promo ============================================================ */
 .main-promo {
   border-right: #f8f8f8 solid 5px;
   height: 1005px;
@@ -220,6 +241,7 @@ main {
   text-align: center;
   margin-top: 20px;
 }
+
 .box1 .bottom {
   height: 150px;
 }
@@ -291,8 +313,10 @@ main {
   font-weight: normal;
   margin-top: 10px;
 }
+/* =============================== main product =============================== */
 .main-product {
   background-color: white;
+  overflow: auto;
 }
 .main-product .add-content {
   display: flex;
@@ -318,7 +342,6 @@ main {
 .main-product .add-content a:hover {
   color: #6a4029;
 }
-
 .favorit:hover,
 .coffee:hover,
 .non-coffe:hover,
@@ -333,14 +356,517 @@ main {
   grid-gap: 5px;
 }
 .card-grid div div {
-  height: 212.4067840576172px;
   width: 156px;
-  left: 554px;
-  top: 311.6610107421875px;
-  border-radius: 30px;
-  font-weight: bold;
+  height: 212.41px;
   margin-left: 50px;
   margin-top: 60px;
   text-align: center;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-grid div div img {
+  position: relative;
+  left: 0;
+  top: -50px;
+  width: 140px;
+  height: 140px;
+}
+.card-grid div div .name {
+  position: relative;
+  top: -50px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 22px;
+  padding: 5px;
+}
+.card-grid div div .price {
+  position: relative;
+  top: -50px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-size: 17px;
+}
+
+/* -----------------product-detail------------------ */
+main {
+  border-top: 1px solid #e0e0e2;
+}
+main .container {
+  margin-top: 20px;
+  text-align: left;
+}
+main .container .row .picture-detail {
+  font-size: 14px !important;
+  border: 1px solid black;
+}
+
+.name-product {
+  /* color: #6a4029; */
+  font-weight: 700;
+}
+
+main .container .row .product-detail .information-product {
+  margin-top: 70px;
+  margin-left: -15px;
+}
+
+main .container .row .product-detail .information-store {
+  margin-top: 52px;
+  font-size: 20px;
+}
+
+main .container .row .all-detail {
+  height: 960px;
+  top: 0px;
+}
+
+main .container .row .all-detail .status-payment {
+  top: 20px;
+}
+
+main .container .row .all-detail .group-status {
+  margin-top: 30px !important;
+}
+
+main .container .row .all-detail .information-detail {
+  width: 40px;
+  height: 40px;
+  align-items: center !important;
+  background-color: #6a4029;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-left: 10px;
+}
+
+.checkout {
+  margin-left: 120px;
+}
+.payment {
+  margin-left: 10px;
+}
+
+main .container .row .all-detail .product-information {
+  position: relative;
+  margin-top: 70px;
+  line-height: 60px;
+}
+main .container .row .all-detail .product-information .title-product {
+  font-weight: 900;
+  font-size: 52px;
+}
+main .container .row .all-detail .price-product {
+  font-weight: 500;
+  font-size: 34px;
+}
+
+main .container .row .all-detail .desc-product {
+  font-size: 18px;
+  line-height: 34px;
+}
+.empty-border {
+  position: absolute;
+  top: 0px;
+  margin-left: 20px;
+  border-bottom: 2px solid #e0e0e2;
+  width: 360px;
+  height: 40px;
+}
+
+.pic-product {
+  width: 413px;
+  height: 670px;
+}
+
+.payment-cek {
+  width: 20px;
+  height: 20px;
+}
+
+.select-form {
+  text-align: left;
+  margin-left: -15px;
+}
+
+.form-buy {
+  height: 63px !important;
+}
+
+.delivery {
+  margin-top: 30px;
+}
+
+.form-row {
+  margin-top: 30px;
+  margin-left: -20px !important;
+}
+
+.input-prepend-append {
+  margin-top: 30px;
+  border: 1px solid #9f9f9f;
+  border-radius: 10px;
+}
+
+.number_passengers {
+  border: none !important;
+  margin-left: 1px;
+  margin-right: 1px;
+}
+
+.add-to-cart {
+  margin-left: -15px;
+}
+
+.button-cart {
+  margin-top: 30px;
+  margin-left: 15px;
+}
+
+.btn-cart {
+  width: 308px;
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  height: 62px !important;
+  background-color: #ffba33 !important;
+  color: #6a4029 !important;
+  border-radius: 10px !important;
+}
+.button-payment {
+  margin-top: 30px;
+  margin-left: -15px;
+}
+
+.btn-payment {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  height: 62px !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+.btn-checkout {
+  font-size: 18px !important;
+  font-weight: 900 !important;
+  height: 62px !important;
+  background-color: #6a4029 !important;
+  color: white !important;
+  border-radius: 10px !important;
+}
+
+/* --------------Payment CSS-------------- */
+
+main .flex-container.main {
+  display: flex;
+  flex-direction: row;
+  background-image: url("../img/bg1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1100px;
+  margin-top: 10px;
+}
+main .kiri {
+  flex: 1;
+}
+.kiri .top {
+  font-family: Rubik;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 47px;
+  color: white;
+  text-shadow: 3px 4px black;
+  padding: 5%;
+  margin-left: 7%;
+  width: 50%;
+}
+.kiri .bot {
+  width: 70%;
+  background-color: white;
+  border-radius: 5%;
+  margin-left: 12%;
+}
+.kiri .bot .line1 {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+  text-align: center;
+  padding-top: 10%;
+  color: #362115;
+}
+.kiri .bot .line2 .wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  padding-bottom: 40px;
+  padding-top: 70px;
+  margin-left: 5%;
+  border-bottom: lightgray solid 2px;
+  width: 90%;
+}
+.kiri .bot .flex-container {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.kiri .bot .flex-container img {
+  height: auto;
+  width: 80%;
+  border-radius: 15%;
+}
+.kiri .bot .flex-container div {
+  font-family: Poppins;
+  font-size: 17px;
+}
+.kiri .bot .line3 .wrapper,
+.kiri .bot .line4 .wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin-left: 5%;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+.kanan.line3,
+.kanan.line4 {
+  text-align: right;
+}
+.kiri .line3 {
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 30px;
+  color: #362115;
+}
+.kiri .line4 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 45px;
+  color: #362115;
+}
+main .kanan.main {
+  flex: 1;
+  margin-top: 170px;
+  margin-right: 10%;
+}
+.kanan .address .top {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 15px;
+}
+.address .top .address {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 0.1ch;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+.address .top .edit {
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 15px;
+  color: white;
+}
+.address .bot {
+  background-color: white;
+  width: 80%;
+  border-radius: 15px;
+  height: 200px;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.address .bot p {
+  font-family: Poppins;
+  font-size: 18px;
+  line-height: 30px;
+  padding-top: 10px;
+}
+.address .bot .mid {
+  border-top: gray solid 3px;
+  border-bottom: gray solid 3px;
+}
+.address .bot .mid p {
+  padding-top: 10px;
+  width: 90%;
+}
+.top.payment {
+  font-family: Poppins;
+  font-weight: 550;
+  font-size: 25px;
+  color: white;
+  text-shadow: black 2px 2px;
+  margin-top: 50px;
+}
+.bot.payment {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  background-color: white;
+  border-radius: 15px;
+  width: 80%;
+  padding: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+}
+.bot.payment div {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.bot.payment .form-check.cod img {
+  background-color: #ffba33;
+  padding: 10px;
+  border-radius: 10px;
+  height: 45px;
+  width: 45px;
+}
+.bot.payment .form-check.kartu img {
+  background-color: #f47b0a;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 40px;
+}
+.bot.payment .form-check.bank img {
+  background-color: #895537;
+  padding: 10px;
+  border-radius: 10px;
+  width: 45px;
+  height: 40px;
+}
+.confirm {
+  margin-top: 50px;
+  width: 80%;
+}
+.confirm button {
+  width: 100%;
+  height: 70px;
+  border-radius: 15px;
+  background-color: #6a4029;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.59);
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+  color: white;
+}
+
+/*---------------- history -------------*/
+main .jumbotron-history {
+  background-image: url("../img/history.png");
+}
+
+main .jumbotron-history .container {
+  /* position: absolute; */
+  text-align: center;
+  margin-top: 40px;
+}
+
+main .jumbotron-history .container .title-history {
+  font-size: 35px;
+  font-weight: 700;
+  color: white;
+}
+main .jumbotron-history .container .description-history {
+  margin-top: -10px;
+}
+main .jumbotron-history .container .desc-history {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+}
+
+main .jumbotron-history .container .row {
+  /* margin-top: 98px; */
+  align-items: center;
+  margin-left: 40px;
+}
+
+.icon-history {
+  position: absolute;
+  top: -15px;
+  /* right: px; */
+}
+
+.card-history {
+  width: 450px;
+  height: 106px;
+  border-radius: 30px;
+  background-color: white;
+  text-align: left;
+  margin-right: 90px;
+  margin-top: 70px;
+}
+
+.current-history {
+  width: 450px;
+  height: 106px;
+  border-radius: 30px;
+  background-color: rgba(250, 250, 250, 0.613) !important;
+  text-align: left;
+  margin-right: 90px;
+}
+
+.cancel-card {
+  width: 35px;
+  height: 35px;
+  padding-left: 12px;
+  padding-top: 5px;
+  border-radius: 50px;
+  margin-left: 48px;
+  background-color: #ffba33;
+  right: 10px;
+}
+
+.cancel-history {
+  width: 10px;
+  height: 10px;
+}
+
+.delete-card {
+  width: 35px;
+  height: 35px;
+  padding-left: 10px;
+  padding-top: 5px;
+  border-radius: 50px;
+  /* margin-left: 28px; */
+  background-color: #6a4029;
+  right: 50px;
+}
+
+.delete-history {
+  width: 14px;
+  height: 16px;
+}
+
+.photo-history {
+  margin-top: 20px;
+  margin-bottom: auto;
+  width: 76px;
+  height: 63px;
+  border-radius: 50px;
+}
+
+.about-history {
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 8px;
+}
+
+.history-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 5px;
+}
+.history-price {
+  font-size: 14px;
+  color: #895537;
+}
+.history-ordered {
+  font-size: 14px;
+  color: #895537;
 }
